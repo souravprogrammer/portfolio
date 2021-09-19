@@ -46,8 +46,8 @@
     ] ,
 
 
-    "aboutme" : ["I am a web developer that comes from a teaching and Business background .Through my past experiences, I can balance the need of users and businesses to understand their pain points and how I can contribute as a Front-end developer and solve their problems."
-        ,"I've worked with a wide range of people from different backgrounds and demographics. This has enabled me to adapt and become flexible in the workplace."],
+    "aboutme" : ["I am a full-Stack Developer that comes from a self taught background. Through my past experiences, I can balance the need of users to understand their pain points and how I can contribute as a developer and solve their problems."
+        ,"I've worlked with a wide range of peopel.This has enabled me to adapt and become flexible in the workplace."],
     "socialMedia" :[
     {
             "name":"twitter",
@@ -59,7 +59,7 @@
     },
     {
         "name":"instagram",
-        "link":"https://www.facebook.com/souravshatma/"
+        "link":"https://www.instagram.com/official_sourav_sharma/"
     },
     {
         "name":"github",
