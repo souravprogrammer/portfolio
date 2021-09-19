@@ -1,0 +1,86 @@
+.about_me{
+    @include maxWidth();
+    // border: 2px solid red ;
+    margin: 2rem auto;
+    padding: 3.2rem;
+    display: flex;
+    // justify-content: center;
+    &_img{
+        // border: green 1px solid;
+        // width: 50%;
+        width: 45%;
+        padding: 2.4rem;
+        img{
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &_content{
+        padding: 2.2rem;
+        width: 585px; 
+        //border: 1px solid rebeccapurple;
+        h2{
+            color: $yellowColour;
+            font-size: 4.8rem;
+            padding:  2.4rem 0;
+            font-weight: 400;
+        }
+        h3{
+            font-family: 'Quattrocento', serif;
+            font-size: 6rem;
+            font-weight: 400;
+            padding:  2rem 0;
+        }
+        p{
+            font-family: 'Quattrocento', serif;
+            font-size: 2rem;
+            margin: 1.6rem 0;
+          //  line-height: 2rem;
+            letter-spacing: 0.025rem;
+        }
+        &_button{
+            margin: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+            font-family: 'Quattrocento', serif;
+
+                margin:  auto;
+                font-weight: 400;
+                font-size: 2rem;
+                color: $PinkColour;
+                background: $findmorecolour;
+                padding: 0.8rem 1.6rem;
+                border-radius: 8px;
+              
+                &:hover{
+                    background: $PinkColour;
+                    color: black;
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1000px){
+
+    .about_me{
+        flex-direction: column;
+        &_img{
+            // border: green 2px solid;
+            width: 100%;
+    
+        }
+        &_content{
+            // border: green 2px solid;
+            padding: 0;
+            width: 100%;
+        }
+    }
+
+
+}

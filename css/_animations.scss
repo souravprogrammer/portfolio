@@ -1,0 +1,46 @@
+@keyframes buttonHover {
+    from{
+        transform: translateY(1px);
+    } 20%{
+        transform: translateY(3px) ;
+    }30%{
+        transform: translateY(4px)  ;
+    }35%{
+        transform: translateY(5px);
+
+    }40%{
+        transform: translateY(4px) ;
+    }  to{
+        transform: translateY(0px) scale(1.04) ;
+    } 
+}
+
+@keyframes fadeIn {
+    
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+@keyframes slideingUp {
+    from{
+       transform: translateY(-1000px);
+
+    }to{
+    //    transform: translateY(100px);
+        opacity: 1;
+
+    }
+}
+@keyframes slideLeft {
+    from{
+        transform: translateX(-1000px);
+    }to{
+        opacity: 1;
+    }
+    
+}
+.fadeIn{
+    opacity: 1;
+}

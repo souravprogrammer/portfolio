@@ -1,0 +1,51 @@
+$PinkColour :  #ffacb7;
+$yellowColour : #f58a07 ;
+$ButtonColour : #ddd6fe ;
+$cardButton : #DDD6fE ;
+$cardButtonHover : #ffacb7 ;
+$readmeHOver : #6b88c6;
+$findmorecolour : #6886C5 ;
+$backgroundcolour : #F5F5F5 ;
+$hoverlightbluecolour : #6886c5;
+$hoverdarkbluecolour : #1e40af;
+;
+
+
+*,*::after ,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+
+}
+body{
+    font-family: 'Oswald', sans-serif;
+ }
+ a{
+     text-decoration: none;
+
+ }
+ @mixin maxWidth {
+    max-width: 1300px;
+
+ }
+ @mixin flexCenter {
+     display: flex;
+     align-items: center;
+ }
+
+ @media (max-width: 1000px){
+     :root{
+         font-size: 52.5%;
+     }
+     
+ }
+
+ @media(max-width : 550px){
+     :root{
+        font-size: 45.5%;
+    }
+ }

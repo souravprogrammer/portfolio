@@ -1,0 +1,32 @@
+
+@import './my_project_item_card';
+.my_projects{
+    @include maxWidth();
+    margin: 0 auto ;
+    &_heading{
+        
+        font-size: 6rem;
+        font-family: 'Oswald';
+        padding:  6rem 3.2rem;
+        color: $yellowColour;
+        font-weight: 400 ;
+    }
+
+    &_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        transition: all 1s;
+        opacity: 0;
+        background: $backgroundcolour;
+        padding: 2rem;
+    }
+
+}
+@media (max-width: 830px) {
+    .my_projects{
+        &_heading{
+            padding-left: 2.6rem;
+        }
+    }
+}

@@ -1,0 +1,135 @@
+
+.lets_contact{
+    padding: 3.2rem;
+    @include maxWidth();
+    margin: 0 auto;
+    // border: 1px gray solid;
+    background: $backgroundcolour;
+    &_headings{
+        h2:nth-child(1){
+            font-size: 4.8rem;
+            font-weight: 400;
+
+
+        }
+        h2:nth-child(2){
+            font-size: 3.6rem;
+            font-family: 'Quattrocento', serif;
+            font-weight: 400;
+            margin-top: 1.2rem;
+        }
+    }
+    &_social_media_section{
+        padding: 2.4rem 0;
+        padding-bottom: 0;
+
+        margin-top: 2.4rem ;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        // align-items: initial;
+
+      
+        &_button{
+            box-sizing: border-box;
+            width: 32%;
+            background: $PinkColour;
+            // border: black 2px solid;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            border : 2px solid $PinkColour;
+            transition: all  0.9s;
+
+
+            padding: 1rem 3.2rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            a{
+            font-family: 'Quattrocento', serif;
+
+                display: inline-block;
+                color: black;
+                font-size: 3rem;
+            }
+            i{
+                font-size: 3rem;
+            }
+
+            &:hover {
+                background: $hoverlightbluecolour;
+                border : 2px solid $hoverdarkbluecolour;
+            }
+        }
+    }
+}
+
+
+
+.lets_talk{
+    @include maxWidth();
+    margin: 4.8rem auto;
+    padding: 3.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+        font-size: 4.8rem;
+        color: $yellowColour;
+        opacity: 0.6 ;
+
+    }
+    &_button{
+        width: 135px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: $PinkColour;
+        padding:  1rem 0.8rem;
+        // padding: 0.8rem 1.6rem;
+        border-radius: 8px;
+        border : 2px solid $PinkColour;
+        transition: all 0.9s;
+
+        a{
+            font-family: 'Quattrocento', serif;
+            color: black;
+            display: inline-block;
+            font-size: 2rem;
+        }
+        i{
+            font-size: 2rem;
+        }
+        &:hover {
+            background: $hoverlightbluecolour;
+            border : 2px solid $hoverdarkbluecolour;
+        }
+    }
+}
+
+
+.footer{
+    @include maxWidth();
+    margin: 0 auto;
+    p{
+        padding: 1.6rem 0;
+        font-family: 'Quattrocento', serif;
+
+        font-size: 3.6rem;
+        text-align: center;
+    
+    }
+}
+
+
+@media (max-width : 800px){
+    .lets_contact{
+        &_social_media_section{
+            flex-direction: column;
+            align-items: center;
+            &_button{
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "name" : "soruav sharma" ,
+    "status" : "Full-Stack Developer",
+    "iamge" : "",
+    "projects" : [
+        {
+            "name" : "Food-Stall",
+            "image" : "./images/projects/demo.PNG",
+            "description" : "this a responsive web UI demo for local food stall.",
+            "stack" : ["HTML","CSS"],
+            "sourceCode" : "https://github.com/souravprogrammer/food-stall",
+            "visit" : "https://souravprogrammer.github.io/food-stall/"
+        },
+        {
+        "name" : "Mosam",
+        "image" : "./images/projects/mosan_img.PNG",
+        "description" : "mosam is a weather forcasting application. All it's accuracy based on the API data provided py openWeather, this app make you update about weather changes along with giving push Notification",
+        "stack" : ["java","android"],
+        "sourceCode" : "https://github.com/souravprogrammer/mosam",
+        "visit" : "https://github.com/souravprogrammer/mosam"
+    },
+    {
+        "name" : "Doge San",
+        "image" : "./images/projects/dogesan_img.PNG",
+        "description" : "Doge San is a small app that allows you to watch your favorite anime shows on your android device. It has a very low memory footprint and works off the Anime1 server. The app scrapes the site and provides a pleasant mobile anime viewing experience. Unlike other apps, this does not contain any ads and is distributed for free.",
+        "stack" : ["java","android","firebase"],
+        "sourceCode" : "https://github.com/souravprogrammer/dogeSan",
+        "visit" : "https://souravprogrammer.github.io/dogesanpage/"
+    },
+    {
+        "name" : "ApnaFlix",
+        "image" : "./images/projects/apnaflix_img.PNG",
+        "description" : "this is a simple UI of a video streaming website.",
+        "stack" : ["HTML","CSS","javaScript"],
+        "sourceCode" : "https://github.com/souravprogrammer/ApnaFlix",
+        "visit" : "https://souravprogrammer.github.io/ApnaFlix/"
+    },
+    {
+        "name" : "So Music",
+        "image" : "./images/projects/so_music_img.PNG",
+        "description" : "This application play audio , supports all audio foramtes.",
+        "stack" : ["Android","java"],
+        "sourceCode" : "https://github.com/souravprogrammer/somusic",
+        "visit" : "https://github.com/souravprogrammer/somusic"
+    }
+    ] ,
+
+
+    "aboutme" : ["I am a web developer that comes from a teaching and Business background .Through my past experiences, I can balance the need of users and businesses to understand their pain points and how I can contribute as a Front-end developer and solve their problems."
+        ,"I've worked with a wide range of people from different backgrounds and demographics. This has enabled me to adapt and become flexible in the workplace."],
+    "socialMedia" :[
+    {
+            "name":"twitter",
+            "link":"https://twitter.com/souravsh1234567"
+   },
+   {
+        "name":"facebook",
+        "link":"https://www.facebook.com/souravshatma/"
+    },
+    {
+        "name":"instagram",
+        "link":"https://www.facebook.com/souravshatma/"
+    },
+    {
+        "name":"github",
+        "link":"https://github.com/souravprogrammer"
+    },
+    {
+        "name":"linkiden",
+        "link":"https://www.linkedin.com/in/sourav-sharma-5428ab10a/"
+    },
+    {
+        "name":"resume",
+        "link":"#"
+    }]
+    
+}
