@@ -1,0 +1,206 @@
+.form{
+    @include maxWidth();
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    display: none;
+ 
+    justify-content: center;
+    align-items: center;
+
+&_shadow{
+    background: rgba(0, 0, 0, 0.788);
+}
+    &_box{
+
+        display: flex;
+        z-index: 100;
+        background: white;
+        width: 90%;
+        height: 100%;
+        // min-width: 400px;
+
+
+
+        &_img{
+            width: 50%;
+            object-fit: cover;
+            object-position: center;
+
+        }
+
+
+.toast{
+    background: rgb(175, 245, 175);
+    border: 2px solid rgb(30, 192, 30);
+    height: 50px;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin: 0rem;
+    padding: 0;
+    transition: all 2s;
+
+    &_text{
+        padding: 0;
+        margin: 0;
+        font-size: 1.6rem;
+        // color: white;
+    }
+}
+
+
+        &_boxing {
+            min-width: 400px;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+            flex-wrap: nowrap;
+            &_area{
+                padding: 2rem 5rem;
+                max-width: 448px;
+                flex: 1.5;
+                // border: 1px solid red;
+                background: $formBackgroundcolour;
+                border-radius: 10px;
+                h1{
+                    color: white;
+                    font-size: 3rem;
+                    font-family: 'Oswald', sans-serif;
+                    margin: 1.2rem 0;
+                    text-align: center;
+                }
+                p{
+                    color: #374151;
+                    font-size: 1.6rem;
+                    font-family: 'Quattrocento', serif;
+                    text-align: center;
+                    margin-bottom: 2rem;
+                }
+                form{
+                    div{
+                        margin: 2rem 0;
+                    }
+                    label{
+                        font-family: 'Oswald', sans-serif;
+                        font-size: 1.4rem;
+                        margin-bottom: 0.8rem;
+                        // color: red;
+                    }
+                    input{
+                        // margin: 1rem;
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                        height: 3.8rem;
+                        border-radius: 5px;
+                        padding: 0.8rem 1.2rem;
+                        box-sizing: border-box;
+                        &:focus {
+                            border :2px solid  #6366f1;
+                        }
+                    }   
+                    textarea{
+                        max-width: 100%;
+                        min-width: 100%;
+                        width: 100%;
+                        border-radius: 5px;
+                        height: 90px;
+                        max-height: 150px;
+                        outline: none;
+                        border: none;
+                        padding: 0.8rem 1.2rem;
+                    }
+                    input,label ,button {
+    
+                        display: block;
+                    }
+                    button{
+                        padding: 1.6rem 1.2rem;
+                        font-size: 1.6rem;
+                        border-radius: 5px;
+                        background : $PinkColour;
+                        outline: none;
+                        border: none ;
+                        width: 100%;
+                        height: 5.6rem;
+                    }
+                }
+            }
+        }
+    
+    
+    
+    }
+
+}
+
+
+@media (max-width : 1000px){
+    .form{
+      
+
+     &_box{
+         flex-direction: column;
+         width: 100%;
+
+         &_img{
+             width: 100%;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             img{
+                 display: block;
+                 width: 70%;
+                 height: 70%;
+             }
+         }
+
+
+         &_boxing{
+             flex: 1;
+             width: 100%;
+             &_area{
+                 height: 600px;
+             }
+         }
+     }
+    }
+}
+
+
+@media (max-width : 450px){
+    .form{
+      
+     &_box{
+         flex-direction: column;
+         width: 100%;
+
+         &_img{
+             width: 100%;
+            //  height: 400px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             img{
+                 display: block;
+                 width: 100%;
+                 height: 70%;
+             }
+         }
+
+
+         &_boxing{
+             flex: 1;
+             width: 100%;
+             min-width: 230px ;
+             &_area{
+                 height: 600px;
+             }
+         }
+     }
+    }
+}

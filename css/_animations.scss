@@ -44,3 +44,13 @@
 .fadeIn{
     opacity: 1;
 }
+
+@keyframes toast {
+    from {
+        opacity: 1;
+        height: 50px;
+    }to{
+        opacity: 0;
+        height: 0px;
+    }
+}

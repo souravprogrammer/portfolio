@@ -1,3 +1,5 @@
+
+// lets_contact.setAttribute("display","none");
 const header_height = 95 ;
 const list_height = 150 ;
 let checkbox = document.querySelector(".bar input[type='checkbox']");
@@ -224,3 +226,43 @@ function datax(){
   });
 
   }).catch((expection)=>{console.log(expection);});
+
+//   /////////////////////////////////////////////////////////////////////////////////////////////
+let lets_contact = document.querySelector(".lets_talk_button");
+let nav_buttons = document.querySelectorAll(".navigation_item li");
+// console.log(nav_buttons);
+let form = document.querySelector(".form");
+let disposable = document.querySelector(".disposable");
+let form_visible =false ;
+lets_contact.addEventListener("click",()=>{
+    console.log(disposable.style.display);
+        disposable.style.display = "none";
+        form.style.display="flex";
+        form_visible = true ;
+});
+
+
+nav_buttons.forEach((element,index)=>{
+    if(nav_buttons.length-1 === index){
+
+        element.addEventListener("click",()=>{
+            disposable.style.display = "none";
+            form.style.display="flex";
+            form_visible = true ;
+            // console.log("contact");
+        });
+
+    }else{
+        element.addEventListener("click" ,()=>{
+            if(form_visible){
+                form.style.display = "none";
+                disposable.style.display = "block";
+                form_visible = false;
+            }
+
+        });
+    }
+    
+});
+
+
