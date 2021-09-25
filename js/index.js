@@ -1,5 +1,3 @@
-
-// lets_contact.setAttribute("display","none");
 const header_height = 95 ;
 const list_height = 150 ;
 let checkbox = document.querySelector(".bar input[type='checkbox']");
@@ -249,7 +247,6 @@ nav_buttons.forEach((element,index)=>{
             disposable.style.display = "none";
             form.style.display="flex";
             form_visible = true ;
-            // console.log("contact");
         });
 
     }else{

@@ -33,9 +33,10 @@
 .toast{
     background: rgb(175, 245, 175);
     border: 2px solid rgb(30, 192, 30);
-    height: 50px;
+    opacity: 0;
+    height: 0px;
     width: 100%;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
@@ -171,7 +172,44 @@
     }
 }
 
+@media (max-width : 800px) {
+    .form{
+        border: 2px solid green   ;
+        &_box{
+            .toast{
+                
+                background: rgb(175, 245, 175);
+                border: 2px solid rgb(30, 192, 30);
+                opacity: 0;
+                position: fixed;
+                top: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 0px;
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8px;
+                margin: 0rem;
+                padding: 0;
+                transition: all 2s;
+            
+                &_text{
+                    padding: 0;
+                    margin: 0;
+                    font-size: 1.6rem;
 
+                }
+
+
+
+        }
+
+    }
+    
+}
+}
 @media (max-width : 450px){
     .form{
       

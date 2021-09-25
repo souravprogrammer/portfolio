@@ -946,9 +946,12 @@ a {
 .form_box .toast {
   background: #aff5af;
   border: 2px solid #1ec01e;
-  height: 50px;
+  opacity: 0;
+  height: 0px;
   width: 100%;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1093,6 +1096,43 @@ a {
   }
   .form_box_boxing_area {
     height: 600px;
+  }
+}
+
+@media (max-width: 800px) {
+  .form {
+    border: 2px solid green;
+  }
+  .form_box .toast {
+    background: #aff5af;
+    border: 2px solid #1ec01e;
+    opacity: 0;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: 0px;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 8px;
+    margin: 0rem;
+    padding: 0;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+  }
+  .form_box .toast_text {
+    padding: 0;
+    margin: 0;
+    font-size: 1.6rem;
   }
 }
 
