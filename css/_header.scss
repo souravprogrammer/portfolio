@@ -3,6 +3,7 @@
     @include maxWidth();
     background: $PinkColour;
     height: 95px;
+    // color: rebeccapurple;
     @include flexCenter();
     opacity: 0;
     animation: fadeIn 2s ease-out;
@@ -30,6 +31,8 @@
             }
         }
         nav{
+        // color: wheat;
+
             flex: 1 ;
             display: flex;
             justify-content: right;
@@ -44,17 +47,55 @@
                     display: inline-block;
                     a{
                         color: black;
+        // color: wheat;
+
                     }
                       span{
                         background: #FDE68A;
                         padding:  0.5rem 1rem;
                         border-radius: 20%;
                     }
+                    // button sun and moon 
+                    .thememode{
+                        // border: 1px red solid;
+                        position: relative;
+                        .dark{
+                            display: none;
+                        }
+                        input{
+                            opacity: 0;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                        }
+                        input:checked ~.light{
+                            display: none;
+                        }
+                        input:checked ~.dark{
+                            display: inline-block;
+                        }
+                        input:checked > .header{
+                            background: black;
+                        }
+                        
+
+                    
+
+                        background-color: #E5E7EB;
+                        &:hover{
+                            background-color: #e5e7ebaf;
+                        }
+
+                    }
                 }
             }
         }
     }
 }
+
+
      
 @media (max-width: 1000px){
     .header{
@@ -101,6 +142,7 @@
                         margin: 1rem;
                         display: flex;
                         flex-direction: column;
+
                     }
                 }
             }

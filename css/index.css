@@ -255,6 +255,40 @@ a {
   border-radius: 20%;
 }
 
+.header_sub nav ul li .thememode {
+  position: relative;
+  background-color: #E5E7EB;
+}
+
+.header_sub nav ul li .thememode .dark {
+  display: none;
+}
+
+.header_sub nav ul li .thememode input {
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.header_sub nav ul li .thememode input:checked ~ .light {
+  display: none;
+}
+
+.header_sub nav ul li .thememode input:checked ~ .dark {
+  display: inline-block;
+}
+
+.header_sub nav ul li .thememode input:checked > .header {
+  background: black;
+}
+
+.header_sub nav ul li .thememode:hover {
+  background-color: #e5e7ebaf;
+}
+
 @media (max-width: 1000px) {
   .header {
     -webkit-box-align: start;
