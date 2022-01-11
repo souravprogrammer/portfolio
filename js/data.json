@@ -4,6 +4,14 @@
     "iamge" : "",
     "projects" : [
         {
+            "name" : "Post Editor",
+            "image" : "./images/projects/post_editor.PNG",
+            "description" : "This web page Instagram post image its has a very similar UI to canva.",
+            "stack" : ["HTML","CSS","javaScript"],
+            "sourceCode" : "https://github.com/souravprogrammer/posteditor",
+            "visit" : "https://souravprogrammer.github.io/posteditor/"
+        },
+        {
             "name" : "Food-Stall",
             "image" : "./images/projects/demo.PNG",
             "description" : "this a responsive web UI demo for local food stall.",

@@ -1134,9 +1134,6 @@ a {
 }
 
 @media (max-width: 800px) {
-  .form {
-    border: 2px solid green;
-  }
   .form_box .toast {
     background: #aff5af;
     border: 2px solid #1ec01e;
